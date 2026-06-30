@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sai Shewale | AI Engineer Portfolio</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <style>
+    body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+    .glow { box-shadow: 0 0 45px rgba(59,130,246,0.5); }
+    .gradient-text {
+      background: linear-gradient(90deg, #60a5fa, #22d3ee, #a78bfa);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .floating {
+      animation: float 6s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-gray-950 via-gray-900 to-black text-gray-100 overflow-x-hidden">
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 bg-black/40 backdrop-blur border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+    <h1 class="text-2xl font-black">Sai<span class="text-blue-500">.</span></h1>
+
+    <div class="hidden md:flex gap-8 text-gray-300 font-medium">
+      <a href="#about" class="hover:text-blue-400">About</a>
+      <a href="#skills" class="hover:text-blue-400">Skills</a>
+      <a href="#projects" class="hover:text-blue-400">Projects</a>
+      <a href="#certifications" class="hover:text-blue-400">Certifications</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center text-center px-6 relative">
+  <div class="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top,_#3b82f6,_transparent_60%)]"></div>
+  <div class="relative z-10" data-aos="zoom-in" data-aos-duration="1200">
+    <h1 class="text-5xl md:text-7xl font-black mb-6 floating">Hi, I'm <span class="gradient-text">Sai Shewale</span></h1>
+    <p class="text-2xl md:text-3xl font-semibold mb-6">
+      <span id="typed" class="text-blue-400"></span>
+    </p>
+    <p class="max-w-3xl mx-auto text-gray-400 mb-10 text-lg">
+      I design and build intelligent systems using AI, automation, and software engineering
+      to solve real-world problems efficiently.
+    </p>
+    <div class="flex flex-wrap justify-center gap-6">
+      <a href="./Sai_Cv3.pdf"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="px-8 py-4 bg-blue-600 rounded-xl font-bold hover:bg-blue-700 glow">
+   Download CV
+</a>
+      <a href="#projects" class="px-8 py-4 border border-gray-600 rounded-xl hover:bg-gray-800">View Work</a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-32 px-6 bg-gray-900">
+  <div class="max-w-5xl mx-auto" data-aos="fade-right">
+    <h2 class="text-4xl font-extrabold mb-6 gradient-text">About Me</h2>
+    <p class="text-gray-300 text-lg leading-relaxed">
+      I am a Computer Science Engineering student at DY Patil International University, Pune.
+      I have hands-on experience in Artificial Intelligence, machine learning, data analysis,
+      REST APIs, and workflow automation. Through internships and projects, I have built
+      production-style systems that improve efficiency and decision-making.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-32 px-6">
+  <div class="max-w-6xl mx-auto" data-aos="fade-up">
+    <h2 class="text-4xl font-extrabold mb-16 gradient-text">Skills</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <div class="bg-gray-800 p-6 rounded-xl text-center hover:scale-110 transition floating">Python</div>
+      <div class="bg-gray-800 p-6 rounded-xl text-center hover:scale-110 transition floating">Machine Learning</div>
+      <div class="bg-gray-800 p-6 rounded-xl text-center hover:scale-110 transition floating">Data Analysis</div>
+      <div class="bg-gray-800 p-6 rounded-xl text-center hover:scale-110 transition floating">REST APIs</div>
+      <div class="bg-gray-800 p-6 rounded-xl text-center hover:scale-110 transition floating">n8n Automation</div>
+      <div class="bg-gray-800 p-6 rounded-xl text-center hover:scale-110 transition floating">Cloud Platforms</div>
+      <div class="bg-gray-800 p-6 rounded-xl text-center hover:scale-110 transition floating">Git & GitHub</div>
+      <div class="bg-gray-800 p-6 rounded-xl text-center hover:scale-110 transition floating">SQL</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="py-32 px-6 bg-gray-900">
+  <div class="max-w-6xl mx-auto" data-aos="zoom-in">
+    <h2 class="text-4xl font-extrabold mb-16 gradient-text">Projects</h2>
+
+    <div class="grid md:grid-cols-2 gap-10">
+
+      <!-- Intellect Code Visualizer -->
+      <div class="bg-gray-800 p-10 rounded-2xl hover:scale-105 transition shadow-lg">
+        <h3 class="text-2xl font-bold mb-3">Intellect Code Visualizer</h3>
+        <p class="text-gray-400">
+          AI-powered platform that converts source code into explanations,
+          flowcharts, narrated slides, and automated explainer videos using LLMs.
+        </p>
+      </div>
+
+      <!-- ExpenseMind AI -->
+      <div class="bg-gray-800 p-10 rounded-2xl hover:scale-105 transition shadow-lg">
+        <h3 class="text-2xl font-bold mb-3">ExpenseMind AI</h3>
+        <p class="text-gray-400">
+          Built an Agentic AI expense analyzer using Groq LLM to categorize
+          transactions and generate personalized financial insights.
+        </p>
+      </div>
+
+      <!-- SmartPark RL -->
+      <div class="bg-gray-800 p-10 rounded-2xl hover:scale-105 transition shadow-lg">
+        <h3 class="text-2xl font-bold mb-3">SmartPark RL – Autonomous Parking Management</h3>
+        <p class="text-gray-400">
+          Built a Q-Learning agent that autonomously navigates a grid-based
+          parking lot, avoids obstacles, and selects the optimal parking space
+          using reward-based learning with real-time visualization.
+        </p>
+      </div>
+
+      <!-- Share Market Analysis Bot -->
+      <div class="bg-gray-800 p-10 rounded-2xl hover:scale-105 transition shadow-lg">
+        <h3 class="text-2xl font-bold mb-3">Share Market Analysis Bot</h3>
+        <p class="text-gray-400">
+          Generated market insights by integrating Yahoo Finance API and
+          News API through automated AI workflows.
+        </p>
+      </div>
+
+      <!-- Electricity Consumption Study -->
+      <div class="bg-gray-800 p-10 rounded-2xl hover:scale-105 transition shadow-lg">
+        <h3 class="text-2xl font-bold mb-3">Electricity Consumption Study</h3>
+        <p class="text-gray-400">
+          Analyzed electricity usage data using Python and visualized trends
+          to identify peak demand patterns.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-32 px-6">
+  <div class="max-w-4xl mx-auto text-center" data-aos="fade-up">
+    <h2 class="text-4xl font-extrabold mb-6 gradient-text">Contact</h2>
+    
+    <p class="text-gray-400 mb-6">
+      Open to internships, jobs, and collaborations.
+    </p>
+
+    <p class="text-lg">
+      📧 <a href="mailto:saishewale.31@gmail.com" class="hover:text-cyan-400 transition">
+        saishewale.31@gmail.com
+      </a>
+    </p>
+
+    <p class="text-lg">
+      💻 <a href="https://github.com/SaiShewale" target="_blank" class="hover:text-cyan-400 transition">
+        GitHub
+      </a>
+    </p>
+
+    <p class="text-lg">
+      🔗 <a href="https://www.linkedin.com/in/sai-shewale-1878ba242" target="_blank" class="hover:text-cyan-400 transition">
+        LinkedIn
+      </a>
+    </p>
+
+    <p class="text-lg">
+      📍 Pune, Maharashtra
+    </p>
+  </div>
+</section>
+
+<footer class="py-10 text-center text-gray-500 border-t border-gray-800">
+  © 2026 Sai Shewale • Crafted with Motion & Code
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true, duration: 1000, easing: 'ease-out-cubic' });
+  new Typed('#typed', {
+    strings: ['AI Engineer', 'Automation Developer', 'Machine Learning Enthusiast', 'Problem Solver'],
+    typeSpeed: 60,
+    backSpeed: 40,
+    loop: true
+  });
+</script>
+
+</body>
+</html>
